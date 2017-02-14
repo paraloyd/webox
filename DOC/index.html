@@ -1,0 +1,226 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>ThreeSixty Template Documentation Template</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;ThreeSixty Bootstrap 3 Template&rdquo; Documentation by &ldquo;Fabian Bentz&rdquo; v1.0</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;ThreeSixty Template&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 04/27/2014<br>
+					By: Fabian Bentz<br>
+					Email: <a href="mailto:info@fabianbentz.de">info@fabianbentz.de</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for downloading my theme.</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#htmlStructure">HTML Structure</a></li>
+			<li><a href="#cssFiles">CSS Files and Structure</a></li>
+			<li><a href="#javascript">JavaScript</a></li>
+			<li><a href="#credits">Sources and Credits</a></li>	
+			<li><a href="#">PHP Code Explanation</a></li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="htmlStructure"><strong>A) HTML Structure</strong> - <a href="#toc">top</a></h3>
+		<p>This theme is a responsive layout with 12 columns build on Bootstrap 3. All of the informations are nested within a div with an specific id. The general template structure is the same throughout the template. Here is the general structure.</p>
+		
+		<img src="assets/images/htmlstructure.png" alt="HTML Structure" />
+		
+		<p>If you would like to edit the background, font, or style of any elements in one of these columns, you would do the following:</p>
+
+<pre>	#about {
+		background-color: #someColor;
+		...
+	} 
+</pre>
+
+		<p>If you find that your new style is not overriding, it is most likely because of a specificity problem. Scroll down in your CSS file and make sure that there isn't a similar style that has more weight.</p>
+
+		<p>So, to ensure that your new styles are applied, make sure that they carry enough "weight" and that there isn't a style lower in the CSS file that is being applied after yours.</p> 
+
+		<hr>
+
+		<h3 id="cssFiles"><strong>B) CSS Files and Structure</strong> - <a href="#toc">top</a></h3>
+
+		<p>I'm using 7 custom CSS files in this theme. The first one is the "custom.css" file. This file also contains some general styling. Every of the 6 Color Styles uses a specific CSS file. This Files contains anchor tag colors, font-colors, etc. Keep in mind, that these values might be overridden somewhere else in the file.</p> 
+		
+		<ol>
+			<li>custom.css</li>
+			<b>Color Themes:</b>
+			<li>theme1.css</li>
+			<li>theme2.css</li>
+			<li>theme3.css</li>
+			<li>theme4.css</li>
+			<li>theme5.css</li>
+			<li>theme6.css</li>
+		</ol>
+
+		<p>All files are separated into sections using:</p>  
+
+<pre>	
+
+	1. NAVBAR
+	   - some Code -
+    2. ABOUT US
+       - some Code -
+    3. SERVICE
+       - some Code -
+    4. PORTFOLIO
+       - some Code -
+    5. TEAM
+       - some Code -
+    6. PRICE TABLES
+       - some Code -
+	
+	etc, etc. 
+</pre>
+		
+		<p>If you would like to edit a specific section of the site, simply find the appropriate label in the CSS file, and then scroll down until you find the appropriate style that needs to be edited.</p> 
+
+		<p>The other 6 CSS Files included in this Template are necessary files from Bootstrap/Sequence Slider/Magnific Popup/etc. .</p>
+		
+		<ol>
+			<li>bootstrap.css</li>
+			<li>color.switch.css</li>
+			<li>jquery.bxslider.css</li>
+			<li>magnific-popup.css</li>
+			<li>sequence-slider.css</li>
+			<li>top.css</li>
+		</ol>
+
+
+		<hr>
+		
+		<h3 id="javascript"><strong>C) JavaScript</strong> - <a href="#toc">top</a></h3>
+		
+		<p>This theme imports 13 Javascript files.</p>
+		
+		<ol>
+			<li>jquery-1.10.2.min.js</li>
+			<b>My custom script:</b>
+			<li>functions.js</li>
+			<b>Plugins:</b>
+			<li>jquery.mixitup.min.js</li>
+			<li>magnific.js</li>
+			<li>jquery.bxslider.min.js</li>
+			<li>jquery.sequence-min.js</li>
+			<li>nbw-parallax.js</li>
+			<li>jquery.inview.js</li>
+			<li>smoothscroll.js</li>
+			<li>jquery.sticky.js</li>
+			<li>jquery.style-switcher.js</li>
+			<li>jquery.flexisel.js</li>
+			<li>retina-1.1.0.min.js</li>
+		</ol>
+		  
+		<ol>
+			<li>jQuery is a Javascript library that greatly reduces the amount of code that you must write.</li>
+			<li>Most of the animation in this site is carried out from the customs scripts. For Example the Portfolio Hover Overlay:
+<pre>
+$('.overlay').hover( 
+        function(){
+            $(this).find('.caption').fadeIn(550); 
+        },
+        function(){
+            $(this).find('.caption').fadeOut(550); 
+        }
+); 
+</pre>
+			</li>
+			<li>In addition to the custom scripts, I implement a few "tried and true" plugins to create the effects. This plugins are packed, so you won't need to manually edit anything in the file. The only necessary thing to know is how to call the method. For example:
+<pre>	
+$(function(){
+         $('#Grid').mixitup({
+                targetSelector: '.mix',
+                filterSelector: '.filter',
+                effects: ['fade','blur'],
+                easing: 'smooth',
+
+            });
+});</pre>
+			</li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="credits"><strong>D) Sources and Credits</strong> - <a href="#toc">top</a></h3>
+		
+		<p>I've used the following plugins, images, icons or other files as listed.
+		
+		<ul>
+			<li>jquery.sequence-min.js - MIT License</li>
+			<li>jquery.mixitup.min.js - CC BY-ND 3.0 License</li>
+			<li>magnific.js - MIT License</li>
+			<li>jquery.bxslider.min.js - WTFPL License</li>
+			<li>nbw-parallax.js - MIT License / GPL License</li>
+			<li>smoothscroll.js - MIT License</li>
+			<li>jquery.sticky.js - MIT License</li>
+			<li>jquery.style-switcher.js - MIT License / GPL License</li>
+			<li>jquery.flexisel.js - MIT License</li>
+			<li>retina-1.1.0.min.js - MIT License</li>
+			<li>Images from picjumbo.com - Free to Use</li>
+			<li>Images from unsplash.com - Free to Use</li>
+			<li>Icons from http://dribbble.com/shots/1201666-Free-Flat-Icons - Free to Use</li>
+			<li>jquery.inview.js - Free to use / Do what you want</li>
+		</ul>
+		
+		<hr>
+		
+				<h3 id="cssFiles"><strong>E) PHP CODE</strong> - <a href="#toc">top</a></h3>
+
+		<p>I'm use 1 custom PHP file (contact.php) in this theme for the Contact Form. You only have to add your Mail Adress and your Subject.</p>   
+
+<pre>	
+// Get the Values from the Contact form
+$EmailFrom = "Website Contact Form";
+$EmailTo = "YOUR MAIL ADRESS";             // insert your email address here
+$Subject = "YOUR SUBJECT HERE";            // insert your Subject here
+$name = Trim(stripslashes($_POST['name'])); 
+$email = Trim(stripslashes($_POST['email'])); 
+$phone = Trim(stripslashes($_POST['phone']));
+$message = Trim(stripslashes($_POST['message'])); 
+	
+</pre>
+		
+		
+		<hr>
+		
+		<p>Once again, thank you so much for downloading this theme.
+		<p class="append-bottom alt large"><strong>Fabian Bentz</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>
